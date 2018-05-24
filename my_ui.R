@@ -4,15 +4,15 @@ my_ui <- navbarPage(
     "Introduction"
   ),
   tabPanel(
-    
+    "Yusha"
   ), # Yusha
   tabPanel(
-    
+    "Jin"
   ), # Jin
   tabPanel(
-    
+    "Ben"
   ), # Ben
   tabPanel(
-    
-  ), # Kevin
+    "Kevin"
+  ) # Kevin
 )
