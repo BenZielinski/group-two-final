@@ -3,5 +3,6 @@ bz_get_first_word <- function(x) {
 }
 
 bz_get_month <- function(x) {
-  strsplit(x, "/")[[1]][1]
+  p <- strsplit(x, "/")[[1]][1]
+  as.numeric(p)
 }
