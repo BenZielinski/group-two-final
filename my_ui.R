@@ -13,6 +13,12 @@ my_ui <- navbarPage(
     "Ben"
   ), # Ben
   tabPanel(
-    "Kevin"
-  ) # Kevin
+    "Kevin", textOutput( "message"),
+             plotlyOutput( "pie" ), 
+             column( width = 12,
+                     fluidPage( 
+                       column( width = 6, plotOutput( "gender")), 
+                       column( width = 6, plotOutput( "trip")) 
+                       ) )
+  ) # Kevin this is a test a test
 )
