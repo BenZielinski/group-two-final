@@ -7,8 +7,10 @@ my_ui <- navbarPage(
     "Yusha"
   ), # Yusha
   tabPanel(
-    sidebarlayout(
-      sidebarpanel(
+    "Jin Yan",
+    
+    sidebarLayout(
+      sidebarPanel(
         sliderInput(
           "year_JY", # key this value will be assigned to
           "year of data", # label
@@ -19,11 +21,12 @@ my_ui <- navbarPage(
         selectInput(
           "select_JY",
           "type of data",
-          choices = c()
+          choices = c("rides per month(selection of year permitted)", "station install", "female & male using")
         )
         
       ),
-      mainpanel(
+      
+      mainPanel(
         titlePanel("introduction of our app"),
         
         p("Based on the analysis of the data from 2014 to 2016, out app will show the attributes and details of 
@@ -31,18 +34,27 @@ my_ui <- navbarPage(
         
         titlePanel("summary of the data we use"),
         
-        p("summary of data"),
+        h2("summary of trip data"),
+        
+        tableOutput("table_trip_JY"),
+        
+        h2("summary of station data"),
         
         tableOutput("table_station_JY"),
         
-        tableOutput("table_trip_JY"),
+        h2("summary of weather data"),
+        
+        p("Riding bike is an outdoor activity. In our research, we take the weather from 10/13/2014 to
+          08/31/2016 as an important parameter."),
+        
+        titlePanel("some general trends"),
         
         p("by adjusting the year slider on the left, the table will show you different kinds of summary of 
           the data we used."),
         
-        tableOutput("table_weather_JY"),
+        plotOutput("plot1_JY"),
         
-        plotOutput("plot1_JY")
+        textOutput("text_2_JY")
       )
       
     )
