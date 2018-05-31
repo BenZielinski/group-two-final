@@ -201,12 +201,12 @@ my_server <- function(input,output) {
   }
   
   the_message <- paste0(
-    "The three data visualizations give a good idea at the user metrics of Pronto users", 
-    " over the period of ", shorten( trip_data[ 1,2 ] ), " to ", 
-    shorten( trip_data[ 236065, 2 ] ), ". The three metrics gives a measurements of what ",
-    "the distribution of age is like over all trips on the pronto system, what share of ",
-    "those trips had Male or Female riders and what the average trip duration of Male and ",
-    "Female riders were."
+    "The three data visualizations give a good idea about the metrics of Pronto users", 
+    " over the period of ", bz_get_first_word( trip_data[ 1,2 ] ), " to ", 
+    bz_get_first_word( trip_data[ 236065, 2 ] ), ". The three metrics give measurements of what ",
+    "the distribution of age is like over all trips on the Pronto system, what share of ",
+    "those trips had male or female riders and what the average trip duration of male and ",
+    "female riders were."
   )
   
   the_message
