@@ -161,7 +161,7 @@ my_ui <- navbarPage(
         uiOutput("secondSelection"),
         
         # Include clarifying text 
-        helpText("Note:", strong("only")," trips have relatively large passengers (counts) and with different origine and destination
+        helpText("Note:", strong("only")," trips have relatively large passengers (counts) and with different origin and destination
                  are plotted under the graph tab. 
                  But ", strong("all")," observed trips will be displayed under the table tab."),
         div(img(src = "bike.png", height = 200, width = 240), style="text-align: center;")
