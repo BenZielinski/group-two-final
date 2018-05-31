@@ -51,9 +51,11 @@ my_ui <- navbarPage(
         titlePanel("introduction of our app"),
         
         p("Based on the analysis of the data from 2014 to 2016, out app will show the attributes and details of 
-          bike sharing economy"),
+          bike sharing economy. This is created by Yusha Wang, Jin Yan, Benjamin Zielinski, Kevin Li."),
         
         titlePanel("summary of the data we use"),
+        
+        a("Our data source", href = "https://www.kaggle.com/pronto/cycle-share-dataset/data"),
         
         h2("summary of trip data"),
         
