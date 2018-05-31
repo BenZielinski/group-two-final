@@ -1,0 +1,12 @@
+name: seattle_bicycle_usage
+title: seattle_bicycle_usage
+username:
+account: benzielinski
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 351559
+bundleId: 1402083
+url: https://benzielinski.shinyapps.io/seattle_bicycle_usage/
+when: 1527748571.04586
+asMultiple: FALSE
+asStatic: FALSE

@@ -30,7 +30,7 @@ my_ui <- navbarPage(
   tabPanel(
     "Introduction",
     
-    p(strong("Pronto was an early, station-based bike share company in Seattle that operated in Seattle from 2014 to 2016. 
+    p(strong("Pronto was an early, station-based bike share company in Seattle that operated from 2014 to 2016. 
       While this company ultimately failed, analyzing the data gathered during its operation gives great 
       insight into trends among bicyclists in Seattle. One potential use for this data is to optimize modern, 
       dockless bike share models.")),
